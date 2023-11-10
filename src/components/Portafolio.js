@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const Portafolio = () => {
   return (
-    <div>Portafolio</div>
-  )
-}
+    <div className="page">
+      <h1 className="heading">Portfolio</h1>
+    </div>
+  );
+};

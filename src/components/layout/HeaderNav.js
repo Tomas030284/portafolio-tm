@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const HeaderNav = () => {
   return (
-    <header className ="header">
+    <header className="header">
       <div className="logo">
         <span>T</span>
         <h3>Tomás Mogrovejo Acosta</h3>
@@ -12,19 +12,44 @@ export const HeaderNav = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/inicio">Inicio</NavLink>
+            <NavLink
+              to="/inicio"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/portafolio">Portafolio</NavLink>
+            <NavLink
+              to="/portafolio"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Portfolio
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/servicios">Servicios</NavLink>
+            <NavLink
+              to="/servicios"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Services
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/curriculum">Curriculum</NavLink>
+            <NavLink
+              to="/curriculum"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Resume
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contacto">Contacto</NavLink>
+            <NavLink
+              to="/contacto"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
